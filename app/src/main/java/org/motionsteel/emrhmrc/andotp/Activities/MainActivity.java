@@ -81,8 +81,8 @@ public class MainActivity extends BaseActivity
         implements SharedPreferences.OnSharedPreferenceChangeListener {
     public static long animatorDuration = 1000;
 
-    private static final String INTENT_SCAN_QR = "org.shadowice.flocke.andotp.intent.SCAN_QR";
-    private static final String INTENT_ENTER_DETAILS = "org.shadowice.flocke.andotp.intent.ENTER_DETAILS";
+    private static final String INTENT_SCAN_QR = "org.motionsteel.emrhmrc.andotp.intent.SCAN_QR";
+    private static final String INTENT_ENTER_DETAILS = "org.motionsteel.emrhmrc.andotp.intent.ENTER_DETAILS";
 
     private EntriesCardAdapter adapter;
     private SpeedDialView speedDial;
