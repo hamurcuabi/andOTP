@@ -114,7 +114,7 @@ public class AboutFragment extends Fragment {
         TextView version = v.findViewById(R.id.about_text_version);
         version.setText(versionName);
 
-        LinearLayout license = v.findViewById(R.id.about_layout_license);
+      /*  LinearLayout license = v.findViewById(R.id.about_layout_license);
         LinearLayout changelog = v.findViewById(R.id.about_layout_changelog);
         LinearLayout source = v.findViewById(R.id.about_layout_source);
 
@@ -223,7 +223,7 @@ public class AboutFragment extends Fragment {
             public void onClick(View view) {
                 openURI(TRANSLATE_URI);
             }
-        });
+        });*/
 
         return v;
     }
