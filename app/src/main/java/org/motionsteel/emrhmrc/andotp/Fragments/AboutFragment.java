@@ -70,7 +70,7 @@ public class AboutFragment extends Fragment {
             imgView.getDrawable().setColorFilter(filter);
         }
 
-        String versionName = "";
+        String versionName = "1";
         try {
             PackageInfo packageInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
             versionName = packageInfo.versionName;
