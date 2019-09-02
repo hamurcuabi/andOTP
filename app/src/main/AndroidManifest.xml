@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
     android:installLocation="auto"
-    package="org.shadowice.flocke.andotp">
+    package="org.motionsteel.emrhmrc.andotp">
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:backupAgent=".Utilities.BackupAgent"
+        android:backupAgent="org.motionsteel.emrhmrc.andotp.Utilities.BackupAgent"
         android:fullBackupOnly="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme" >
 
         <activity
-            android:name=".Activities.MainActivity"
+            android:name="org.motionsteel.emrhmrc.andotp.Activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize">
@@ -24,40 +24,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
-                <action android:name="org.shadowice.flocke.andotp.intent.SCAN_QR" />
-                <action android:name="org.shadowice.flocke.andotp.intent.ENTER_DETAILS" />
+                <action android:name="org.motionsteel.emrhmrc.andotp.intent.SCAN_QR" />
+                <action android:name="org.motionsteel.emrhmrc.andotp.intent.ENTER_DETAILS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="android.app.shortcuts"
                        android:resource="@xml/shortcuts" />
         </activity>
         <activity
-            android:name=".Activities.AboutActivity"
-            android:parentActivityName=".Activities.MainActivity"
+            android:name="org.motionsteel.emrhmrc.andotp.Activities.AboutActivity"
+            android:parentActivityName="org.motionsteel.emrhmrc.andotp.Activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activities.AuthenticateActivity"
-            android:parentActivityName=".Activities.MainActivity"
+            android:name="org.motionsteel.emrhmrc.andotp.Activities.AuthenticateActivity"
+            android:parentActivityName="org.motionsteel.emrhmrc.andotp.Activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activities.BackupActivity"
-            android:parentActivityName=".Activities.MainActivity"
+            android:name="org.motionsteel.emrhmrc.andotp.Activities.BackupActivity"
+            android:parentActivityName="org.motionsteel.emrhmrc.andotp.Activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activities.IntroScreenActivity"
+            android:name="org.motionsteel.emrhmrc.andotp.Activities.IntroScreenActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".Activities.MainActivity"
+            android:parentActivityName="org.motionsteel.emrhmrc.andotp.Activities.MainActivity"
             android:theme="@style/Theme.Intro.Solid" />
         <activity
-            android:name=".Activities.SettingsActivity"
-            android:parentActivityName=".Activities.MainActivity"
+            android:name="org.motionsteel.emrhmrc.andotp.Activities.SettingsActivity"
+            android:parentActivityName="org.motionsteel.emrhmrc.andotp.Activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:screenOrientation="fullSensor"
             tools:replace="screenOrientation" />
         <activity
-            android:name=".Activities.PanicResponderActivity"
+            android:name="org.motionsteel.emrhmrc.andotp.Activities.PanicResponderActivity"
             android:launchMode="singleInstance"
             android:noHistory="true"
             android:theme="@android:style/Theme.NoDisplay">
@@ -67,15 +67,15 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".Receivers.PlainTextBackupBroadcastReceiver">
+        <receiver android:name="org.motionsteel.emrhmrc.andotp.Receivers.PlainTextBackupBroadcastReceiver">
             <intent-filter>
-                <action android:name="org.shadowice.flocke.andotp.broadcast.PLAIN_TEXT_BACKUP" />
+                <action android:name="org.motionsteel.emrhmrc.andotp.broadcast.PLAIN_TEXT_BACKUP" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".Receivers.EncryptedBackupBroadcastReceiver">
+        <receiver android:name="org.motionsteel.emrhmrc.andotp.Receivers.EncryptedBackupBroadcastReceiver">
             <intent-filter>
-                <action android:name="org.shadowice.flocke.andotp.broadcast.ENCRYPTED_BACKUP" />
+                <action android:name="org.motionsteel.emrhmrc.andotp.broadcast.ENCRYPTED_BACKUP" />
             </intent-filter>
         </receiver>
     </application>

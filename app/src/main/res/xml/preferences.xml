@@ -22,7 +22,7 @@
             app:vnt_minValue="@integer/settings_min_tap_to_reveal_timeout"
             app:vnt_maxValue="@integer/settings_max_tap_to_reveal_timeout" />
 
-        <org.shadowice.flocke.andotp.Preferences.CredentialsPreference
+        <org.motionsteel.emrhmrc.andotp.Preferences.CredentialsPreference
             android:key="@string/settings_key_auth"
             android:title="@string/settings_title_auth" />
 
@@ -135,7 +135,7 @@
             android:summary="@string/settings_desc_backup_directory"
             android:dependency="@string/settings_key_backup_ask" />
 
-        <org.shadowice.flocke.andotp.Preferences.PasswordEncryptedPreference
+        <org.motionsteel.emrhmrc.andotp.Preferences.PasswordEncryptedPreference
             android:key="@string/settings_key_backup_password_enc"
             android:title="@string/settings_title_backup_password"
             android:summary="@string/settings_desc_backup_password" />

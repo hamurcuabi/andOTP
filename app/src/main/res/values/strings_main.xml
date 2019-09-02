@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">andOTP</string>
+    <string name="app_name" translatable="false">Ms-OTP (dev)</string>
 
     <!-- Buttons -->
     <string name="button_cancel">Cancel</string>
